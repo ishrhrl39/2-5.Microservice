@@ -44,6 +44,7 @@ public class ItemController {
 		}
 		*/
 		
+		itemDTO.setItemType(itemType);
 		itemService.insertItem(itemDTO);
 		log.debug("request add item id = {}", itemDTO.getId());
 		
